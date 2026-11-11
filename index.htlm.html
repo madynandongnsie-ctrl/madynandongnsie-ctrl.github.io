@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Madyna N’DONG NSIE – Géopolitique, sécurité internationale et action humanitaire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--surface:#fff;--ink:#1d2433;--muted:#5b6475;--line:#dfe3ea;--navy:#27354f;--navy-ink:#eef1f6;--accent:#1f7a63;--accent-soft:#e2f1ec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121722;--surface:#1a2130;--ink:#e8ebf2;--muted:#9aa4b8;--line:#2b3447;--navy:#0e1320;--accent:#4fc3a1;--accent-soft:#16332c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121722;--surface:#1a2130;--ink:#e8ebf2;--muted:#9aa4b8;--line:#2b3447;--navy:#0e1320;--accent:#4fc3a1;--accent-soft:#16332c;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Sora,Inter,sans-serif;margin:0;line-height:1.15}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.layout{display:grid;grid-template-columns:340px 1fr;min-height:100vh}
+aside{background:var(--navy);color:var(--navy-ink);padding:48px 36px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow:auto}
+.photo{width:148px;height:148px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.18);display:block;margin-bottom:28px}
+aside h1{font-size:2rem;font-weight:800;letter-spacing:-.01em}
+aside h1 span{display:block;font-weight:500;font-size:1.2rem;opacity:.8;margin-top:6px}
+aside p.role{margin:18px 0 0;font-size:.98rem;opacity:.85;line-height:1.55}
+nav{margin:36px 0;display:flex;flex-direction:column;gap:2px}
+nav a{text-decoration:none;padding:9px 0 9px 14px;border-left:2px solid rgba(255,255,255,.15);font-size:.97rem;opacity:.8;transition:.15s}
+nav a:hover,nav a.on{opacity:1;border-left-color:#6fdcbc;padding-left:20px}
+.side-contact{margin-top:auto;font-size:.92rem;display:grid;gap:8px}
+.side-contact a{opacity:.85;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25);width:max-content;max-width:100%;overflow-wrap:anywhere}
+.side-contact a:hover{opacity:1}
+main{padding:72px clamp(24px,6vw,88px) 40px;max-width:980px}
+.hero h2{font-size:clamp(2.1rem,4.6vw,3.4rem);font-weight:800;letter-spacing:-.02em;max-width:17em}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:36em;margin:24px 0 0}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.badge{background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:.9rem;padding:7px 14px;border-radius:99px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:10px;border:1.5px solid var(--navy);transition:.15s}
+.btn.p{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.p:hover{background:var(--accent);border-color:var(--accent)}
+.btn:not(.p){color:var(--ink);border-color:var(--ink)}
+.btn:not(.p):hover{background:var(--ink);color:var(--bg)}
+section{padding-top:84px}
+section>h2{font-size:1.7rem;font-weight:700;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:34px}
+.about p{margin:0 0 16px;max-width:42em}
+.tl{list-style:none;margin:0;padding:0 0 0 28px;border-left:2px solid var(--line)}
+.tl li{position:relative;padding-bottom:38px}
+.tl li::before{content:"";position:absolute;left:-37px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.tl li.now::before{background:var(--accent)}
+.date{font-size:.9rem;font-weight:600;color:var(--accent)}
+.tl h3{font-size:1.2rem;font-weight:700;margin-top:4px}
+.org{color:var(--muted);font-weight:500;margin-top:2px}
+.tl ul{margin:14px 0 0;padding-left:20px;max-width:46em}
+.tl li li{padding:0 0 7px;position:static}
+.tl li li::before{display:none}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card h3{font-size:1.1rem;margin:4px 0 6px}
+.card p{margin:6px 0 0;color:var(--muted);font-size:.97rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:34px}
+.skills h3{font-size:1.02rem;margin-bottom:14px}
+.skills ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.skills li{background:var(--surface);border:1px solid var(--line);padding:6px 13px;border-radius:8px;font-size:.93rem}
+.lang{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.lang li{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0;font-size:.97rem}
+.lang span{color:var(--muted)}
+.awards{display:grid;gap:16px}
+.award{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+.award b{font-family:Sora,sans-serif;font-size:1.05rem;color:var(--accent)}
+.award h3{font-size:1.05rem;font-family:Inter,sans-serif;font-weight:600;line-height:1.4}
+.award p{margin:4px 0 0;color:var(--muted);font-size:.94rem}
+.contact p{max-width:34em;margin:0 0 26px}
+footer{margin-top:90px;padding:26px 0 8px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+@media (max-width:900px){
+.layout{grid-template-columns:1fr}
+aside{position:static;height:auto;padding:36px 24px 28px}
+nav{flex-direction:row;flex-wrap:wrap;gap:8px 18px;margin:24px 0 8px}
+nav a{border:0;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.on{padding-left:0;border-bottom-color:#6fdcbc}
+.side-contact{display:none}
+main{padding-top:48px}
+section{padding-top:64px}
+.award{grid-template-columns:1fr;gap:6px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+<img class="photo" alt="Portrait de Madyna N’DONG NSIE" src="data:image/jpeg;base64,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">
+<h1>Madyna<span>N’DONG NSIE</span></h1>
+<p class="role">Étudiante en science politique à Paris 8. Je me forme à l’analyse géopolitique des conflits pour devenir chargée de projet humanitaire.</p>
+<nav aria-label="Navigation principale">
+<a href="#apropos">À propos</a>
+<a href="#projet">Projet</a>
+<a href="#parcours">Parcours</a>
+<a href="#formation">Formation</a>
+<a href="#competences">Compétences</a>
+<a href="#distinctions">Distinctions</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="side-contact">
+<a href="mailto:madyna.ndongnsie@gmail.com">madyna.ndongnsie@gmail.com</a>
+<a href="https://www.linkedin.com/in/madyna-n-dong-nsie-472101351/" target="_blank" rel="noopener">LinkedIn</a>
+<span>Saint-Denis, France</span>
+</div>
+</aside>
+
+<main>
+<header class="hero">
+<h2>Comprendre pourquoi les conflits éclatent, protéger ceux qui les subissent.</h2>
+<p>Étudiante en science politique, je m’oriente vers la géopolitique, la sécurité internationale et la résolution des conflits. Mon objectif : devenir chargée de projet humanitaire auprès des populations vulnérables touchées par la guerre.</p>
+<div class="badges">
+<span class="badge">Lauréate du prix de l’engagement étudiant 2026</span>
+<span class="badge">Stage à l’Ambassade du Gabon</span>
+<span class="badge">Géopolitique et prévention des conflits</span>
+</div>
+<div class="btns">
+<a class="btn p" href="#contact">Me contacter</a>
+<a class="btn" href="#parcours">Voir mon parcours</a>
+</div>
+</header>
+
+<section id="apropos" class="about">
+<h2>À propos</h2>
+<p>Je suis en licence de science politique à l’université Paris 8, avec une spécialité en sociologie politique de l’international et en histoire. Je m’intéresse aux rapports de force, aux stratégies des États et des organisations, et à la manière dont ils répondent aux crises. Mes études me donnent des méthodes de recherche : entretiens, observations, bases de données académiques, synthèses.</p>
+<p>Mon parcours relie l’analyse et le terrain. J’ai soutenu des femmes victimes de violences et leurs enfants en service civique, accueilli et orienté des bénéficiaires en association, puis appuyé les activités diplomatiques d’une ambassade, avec des recherches et des synthèses pour deux conseillers.</p>
+<p>Une préparation militaire de l’Armée de Terre et le rugby de haut niveau m’ont appris la discipline, le travail d’équipe et la gestion de la pression.</p>
+</section>
+
+<section id="projet" class="about">
+<h2>Projet professionnel</h2>
+<p>Je veux me spécialiser dans l’analyse géopolitique des conflits et de leur résolution, puis devenir chargée de projet humanitaire : aider les populations vulnérables touchées par les conflits.</p>
+<h3 style="margin:40px 0 18px;font-size:1.2rem">Mes domaines d’étude</h3>
+<div class="edu">
+<article class="card"><h3>Sécurité internationale</h3><p>Analyse des menaces, prévention des conflits, coopération entre États.</p></article>
+<article class="card"><h3>Défense</h3><p>Stratégie militaire, politiques de défense, planification et coopération de défense.</p></article>
+<article class="card"><h3>Géopolitique et conflits</h3><p>Pourquoi les conflits éclatent, leurs dynamiques et leurs conséquences.</p></article>
+<article class="card"><h3>Décision publique et stratégique</h3><p>Comment dirigeants, diplomates, militaires et institutions prennent leurs décisions.</p></article>
+</div>
+<h3 style="margin:48px 0 18px;font-size:1.2rem">Ma grille d’analyse d’un conflit</h3>
+<div class="edu">
+<article class="card"><h3>Territoire</h3><p>Frontières, enjeux géographiques, accès aux ressources stratégiques : énergie, eau, matières premières.</p></article>
+<article class="card"><h3>Acteurs</h3><p>Acteurs directs (États, groupes armés) et acteurs extérieurs (puissances régionales ou internationales, organisations).</p></article>
+<article class="card"><h3>Représentations</h3><p>Idéologies, religions, histoire et discours qui motivent les actions des belligérants.</p></article>
+<article class="card"><h3>Causes</h3><p>Facteurs internes, pressions externes et éléments déclencheurs.</p></article>
+</div>
+<h3 style="margin:48px 0 18px;font-size:1.2rem">Prévenir et résoudre</h3>
+<div class="skills" style="display:block"><ul><li>Diplomatie préventive et médiation</li><li>Renforcement de l’État de droit et de la gouvernance locale</li><li>Sécurité collective et droit international</li><li>Lutte contre la pauvreté, les inégalités et les discriminations</li></ul></div>
+<h3 style="margin:48px 0 18px;font-size:1.2rem">Où je veux travailler</h3>
+<div class="edu">
+<article class="card"><h3>Sécurité internationale et défense</h3><p>Analyste en géopolitique, diplomate ou fonctionnaire au sein des ministères (Armées, Affaires étrangères), de think tanks et d’instituts de recherche.</p></article>
+<article class="card"><h3>Gestion de crises et action humanitaire</h3><p>Chargée de projet ou de mission humanitaire en ONG (Croix-Rouge, MSF) ou en organisation internationale (ONU, OSCE).</p></article>
+</div>
+</section>
+
+<section id="parcours">
+<h2>Parcours</h2>
+<ol class="tl">
+<li class="now">
+<div class="date">2025 à aujourd’hui</div>
+<h3>Bénévole associatif</h3>
+<div class="org">ARTIS Multimédia</div>
+<ul>
+<li>Encadrement des élèves à l’atelier d’aide aux devoirs : explication des cours, accompagnement méthodologique et suivi de leur progression.</li>
+<li>Accueil et orientation des bénéficiaires : appui dans les démarches administratives et information sur les dispositifs disponibles.</li>
+<li>Participation à la préparation et à la logistique des événements et activités collectives.</li>
+</ul>
+</li>
+<li>
+<div class="date">Juin à juillet 2026</div>
+<h3>Stagiaire</h3>
+<div class="org">Ambassade du Gabon en France, Paris</div>
+<ul>
+<li>Appui aux activités diplomatiques et protocolaires lors de rencontres institutionnelles.</li>
+<li>Participation à l’organisation et à l’accueil de la rencontre avec le Président de la République, et au suivi des échanges avec l’OIF.</li>
+<li>Recherches, veilles et synthèses pour les dossiers du Conseiller économique et du Conseiller des affaires étrangères.</li>
+<li>Accueil et accompagnement des ressortissants gabonais dans leurs démarches, et suivi administratif au sein du service consulaire.</li>
+</ul>
+</li>
+<li>
+<div class="date">2023 à 2025</div>
+<h3>Chargée de mission en service civique</h3>
+<div class="org">Association Amour&amp;Vie</div>
+<ul>
+<li>Participation aux actions de soutien aux femmes victimes de violences conjugales et à leurs enfants.</li>
+<li>Mise en œuvre de projets d’accompagnement avec les ambassadrices de l’association.</li>
+<li>Représentation de l’association lors d’événements de sensibilisation et coordination des actions de terrain.</li>
+</ul>
+</li>
+<li>
+<div class="date">Juillet à août 2024</div>
+<h3>Équipière polyvalente</h3>
+<div class="org">McDonald’s</div>
+<ul>
+<li>Prise de commandes, service en salle et préparation en cuisine.</li>
+<li>Gestion du temps et du stress dans un environnement à forte affluence.</li>
+<li>Relation client et esprit d’équipe pour un service rapide et de qualité.</li>
+</ul>
+</li>
+<li>
+<div class="date">Juillet 2023</div>
+<h3>Stagiaire</h3>
+<div class="org">Préparation militaire de l’Armée de Terre</div>
+<ul>
+<li>Développement de l’ordre, de la discipline et de la ponctualité.</li>
+<li>Renforcement de l’esprit d’équipe et de la cohésion par des entraînements collectifs et des défis partagés.</li>
+<li>Gestion de la pression et résilience au service d’objectifs communs.</li>
+</ul>
+</li>
+</ol>
+</section>
+
+<section id="formation">
+<h2>Formation</h2>
+<div class="edu">
+<article class="card">
+<div class="date">2024 à 2027</div>
+<h3>Licence de science politique</h3>
+<div class="org">Université Paris 8</div>
+<p>Spécialité : sociologie politique de l’international et histoire.</p>
+</article>
+<article class="card">
+<div class="date">2021 à 2024</div>
+<h3>Baccalauréat général, mention Très Bien</h3>
+<div class="org">Lycée général Cassini, Clermont de l’Oise</div>
+<p>Spécialités : histoire-géographie, géopolitique et sciences politiques, sciences économiques et sociales. Options : mathématiques et histoire des arts.</p>
+</article>
+</div>
+</section>
+
+<section id="competences">
+<h2>Compétences</h2>
+<div class="skills">
+<div>
+<h3>Projets et mécénat</h3>
+<ul><li>Démarche de mécénat</li><li>Développement et présentation de projets</li><li>Suivi et gestion de projets associatifs</li><li>Présentation orale</li></ul>
+</div>
+<div>
+<h3>Recherche et rédaction</h3>
+<ul><li>Entretiens et observations</li><li>Bases de données académiques</li><li>Rédaction académique</li><li>Synthèse et veille</li></ul>
+</div>
+<div>
+<h3>Relation et service</h3>
+<ul><li>Accueil et orientation</li><li>Service en restauration</li><li>Prise de commandes</li></ul>
+</div>
+<div>
+<h3>Numérique</h3>
+<ul><li>Pack Office</li><li>Outils collaboratifs</li><li>Recherche en ligne avancée</li></ul>
+</div>
+<div>
+<h3>Langues</h3>
+<ul class="lang"><li>Français <span>langue maternelle</span></li><li>Anglais <span>niveau B2</span></li><li>Espagnol <span>niveau A2</span></li></ul>
+</div>
+<div>
+<h3>Mobilité</h3>
+<ul><li>Titulaire du permis B</li></ul>
+</div>
+</div>
+</section>
+
+<section id="distinctions">
+<h2>Distinctions</h2>
+<div class="awards">
+<div class="award"><b>2026</b><div><h3>Lauréate du prix de l’engagement étudiant</h3><p>Thématique : territoire et ville de Saint-Denis.</p></div></div>
+<div class="award"><b>2022–23</b><div><h3>Vice-championne de France de rugby cadettes à X</h3><p>Saison 2022-2023.</p></div></div>
+<div class="award"><b>2022–23</b><div><h3>Championne des Hauts-de-France de rugby cadettes à X</h3><p>Saison 2022-2023.</p></div></div>
+<div class="award"><b>2023–24</b><div><h3>Élève d’une Cordée de la réussite</h3><p>Pendant toute l’année de terminale.</p></div></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>Un stage, un projet associatif, une collaboration ? Écrivez-moi, je réponds avec plaisir.</p>
+<div class="btns">
+<a class="btn p" href="mailto:madyna.ndongnsie@gmail.com">madyna.ndongnsie@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/madyna-n-dong-nsie-472101351/" target="_blank" rel="noopener">Voir mon LinkedIn</a>
+</div>
+</section>
+<footer>© 2026 Madyna N’DONG NSIE. Saint-Denis, France.</footer>
+</main>
+</div>
+<script>
+(function(){
+var links=[].slice.call(document.querySelectorAll('nav a'));
+var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+function on(){var y=window.scrollY+160,c=0;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)c=i});links.forEach(function(a,i){a.classList.toggle('on',i===c)})}
+window.addEventListener('scroll',on,{passive:true});on();
+})();
+</script>
+</body>
+</html>
